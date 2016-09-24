@@ -37,6 +37,7 @@ echo -e "${TS}Copy config files${TE}"
 FILES=(
 "gitconfig"
 "zshrc"
+"gemrc"
 )
 
 for file in "${FILES[@]}"; do
