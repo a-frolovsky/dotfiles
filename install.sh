@@ -29,6 +29,9 @@ brew cask install iterm2
 echo -e "${TS}Install Google Chrome${TE}"
 brew cask install google-chrome
 
+echo -e "${TS}Install 1Password${TE}"
+brew cask install 1password
+
 # Copy config files
 echo -e "${TS}Copy config files${TE}"
 FILES=(
