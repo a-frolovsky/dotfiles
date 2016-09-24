@@ -17,11 +17,31 @@ echo -e "${TS}Install zsh & oh-my-zs${TE}"
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+echo -e "${TS}Install rbenv (Ruby environment)${TE}"
+brew install rbenv
+
+echo -e "${TS}Install nvm (Node Version Manager)${TE}"
+brew install nvm
+
 echo -e "${TS}Install iTerm2${TE}"
 brew cask install iterm2
 
 echo -e "${TS}Install Google Chrome${TE}"
 brew cask install google-chrome
 
-echo -e "${TS}Install AppCleaner${TE}"
-brew cask install appcleaner
+# Copy config files
+echo -e "${TS}Copy config files${TE}"
+FILES=(
+"gitconfig"
+"zshrc"
+)
+
+for file in "${FILES[@]}"; do
+  if [ -f "$HOME/.$file" ]; then
+    mv $HOME/.$file $HOME/.$file.old
+  fi
+
+  cp -f $PWD/$file $HOME/.$file
+done
+
+echo -e "${TS}Done.${TE}"
