@@ -17,9 +17,6 @@ echo -e "${TS}Install zsh & oh-my-zs${TE}"
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo -e "${TS}Install tree${TE}"
-brew install tree
-
 echo -e "${TS}Install iTerm2${TE}"
 brew cask install iterm2
 
