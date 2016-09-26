@@ -23,6 +23,10 @@ brew install rbenv
 echo -e "${TS}Install nvm (Node Version Manager)${TE}"
 brew install nvm
 
+echo -e "${TS}Install PostgreSQL${TE}"
+brew install postgresql
+initdb /usr/local/var/postgres
+
 echo -e "${TS}Install iTerm2${TE}"
 brew cask install iterm2
 
