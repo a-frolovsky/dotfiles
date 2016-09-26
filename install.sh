@@ -42,6 +42,7 @@ FILES=(
 "gitconfig"
 "zshrc"
 "gemrc"
+"aliases"
 )
 
 for file in "${FILES[@]}"; do
