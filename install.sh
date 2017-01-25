@@ -20,6 +20,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo -e "${TS}Install rbenv (Ruby environment)${TE}"
 brew install rbenv
 
+echo -e "${TS}Install pyenv (Python environment)${TE}"
+brew install pyenv
+
 echo -e "${TS}Install nvm (Node Version Manager)${TE}"
 brew install nvm
 
