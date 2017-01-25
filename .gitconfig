@@ -1,0 +1,19 @@
+[user]
+  name = Anton Frolovsky
+  email = antonfrolovsky@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[branch]
+  autosetupmerge = always
+  autosetuprebase = always
+[merge]
+  log = true
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignore_global
+  whitespace = fix,-indent-with-non-tab,trailing-space,space-before-tab
+  excludesfile = ~/.gitignore
+[push]
+  default = current
