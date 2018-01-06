@@ -10,4 +10,5 @@ nvm \
 rbenv \
 zsh \
 tmux \
-neovim
+neovim \
+fzf

@@ -6,6 +6,8 @@ FILES=(
 ".gitconfig"
 ".gitignore_global"
 ".zshrc"
+".tmux.conf"
+".fzf.zsh"
 )
 
 for file in "${FILES[@]}"; do

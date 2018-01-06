@@ -8,3 +8,11 @@ set showmode
 set showcmd
 set showmatch
 set nu
+
+" Plug
+source ~/.config/nvim/plugins.vim
+
+" NerdTree
+let NERDTreeShowHidden=1
+map <Leader>n :NERDTreeToggle<cr>
+map <Leader>m :NERDTreeFind<cr>
