@@ -8,9 +8,16 @@ set showmode
 set showcmd
 set showmatch
 set nu
+set lazyredraw
+set scrolloff=5
+set ve=block
 
 " Plug
 source ~/.config/nvim/plugins.vim
+
+" Leader key
+let mapleader      = ' '
+let maplocalleader = ' '
 
 " NerdTree
 let NERDTreeShowHidden=1
